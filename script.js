@@ -39,6 +39,7 @@ window.addEventListener("keydown" , (e)=>{
     }
     else if (/([/*+-])/.test(e.key))
     {
+        e.preventDefault();
         if (currentVar !== "")
         {
             previousVar = checkForPreviousOperation();
