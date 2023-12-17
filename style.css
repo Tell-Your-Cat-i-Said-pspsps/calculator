@@ -2,6 +2,7 @@ body
 {
     background-color: #d1d0c5 ;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -18,8 +19,10 @@ body
 }
 .calScreen
 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     background-color: #2c2e31;
-    height: 120px;
     flex-basis: 120px;
     border: 0px solid #2c2e31;
     border-radius: 8px;
@@ -28,7 +31,6 @@ body
 .calBtns
 {
     display: flex;
-
 }
 #rightColumn ,#leftColumn
 {
@@ -42,6 +44,7 @@ body
 {
     flex-grow: 1;
     height: 60px;
+    min-width: 50px;
     background-color: #d1d0c5 ;
     border: 0px solid #2c2e31;
     border-radius: 8px;
@@ -52,9 +55,36 @@ body
 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
-.clcBtn
+#operationArea 
 {
+    padding-top: 6px;
+    flex-basis: 30px;
+    margin: 0 12px;
+    overflow-wrap: break-word;
+    color: #d1d0c5;
+    text-align: right;
+}
+#ioArea
+{
+    overflow-wrap: break-word;
+    text-align: right;
+    flex-grow: 1;
+    margin: 0 12px;
+    color: #d1d0c5;
+    font-size: 48px;
+}
+.footer
+{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #323437;
+}
+footer>a{
+    color: #323437;
 }
 
